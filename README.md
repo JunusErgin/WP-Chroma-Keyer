@@ -8,7 +8,7 @@ A Wordpress plugin to insert a video and remove its background color. The remove
 
 ```bash
 [chroma-keyer 
-  src="https://linkto-your-video.com/yourvideo.mp4" 
+  src="https://link-to-your-video.com/yourvideo.mp4" 
   placeholder="https://placeholder-before-video-starts.com/placeholder.png" 
   min-r="0" 
   min-g="0" 
