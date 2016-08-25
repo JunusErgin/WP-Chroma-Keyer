@@ -1,5 +1,5 @@
 # WP-Chroma-Keyer
-A Wordpress plugin to insert a video and remove its background color. The removed color will be transparent. You can simply specify a minimum and a maximum RGB code, you want to filter.
+A Wordpress plugin to insert a video and remove its background color. The removed color will be transparent. You can simply specify the minimum and a maximum RGB code, you want to filter.
 
 # Getting started
 - Download the plugin and upload the zip file to your Wordpress just like every plugin.
