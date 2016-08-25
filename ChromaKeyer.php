@@ -25,8 +25,8 @@ function removeBackground($atts)
         'min-g' => '0',
         'max-b' => '0',
         'min-b' => '0',
-        'height' => '848',
-        'width' => '415'
+        'height' => '720',
+        'width' => '960'
     ), $atts);
 
 
