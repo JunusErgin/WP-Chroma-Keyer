@@ -34,6 +34,9 @@ The directive includes a video to your page and turns all colors between rgb(0,0
 | height     | The height of your video. | 720 |
 | width     | The width of your video. | 960 |
 
+# Error handling
+Sometimes it is hard to find the exact color range. Videos often don't render with the same RGB schema that the Browser uses. 
+I recommend to render the videos with a black background (RGB-code 0,0,0) and enlight all video colors a little bit. Than filter for `max-r="1"`, `max-g="1"`, `max-b="1"`.  
 
 
 # Problems / Bugs
