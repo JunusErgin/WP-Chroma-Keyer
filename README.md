@@ -23,3 +23,7 @@ The directive includes a video to your page and turns all colors between rgb(0,0
 
 # Problems / Bugs
 Please create a an issue. I'll try to fix the problem with you.
+
+## Contributors
+
+- <a href="https://github.com/kelyane">Kelyane</a>
