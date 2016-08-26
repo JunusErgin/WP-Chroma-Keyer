@@ -23,16 +23,17 @@ The directive includes a video to your page and turns all colors between rgb(0,0
 
 # API Documentation
 
-| Attribute        | Description           | Default value  |
-| ------------- |:-------------:| -----:|
-| min-r     | The minimum red part you want to keep in your video. | 0 |
-| min-g     | The minimum green part you want to keep in your video. |  0 |
-| min-b    | The minimum blue part you want to keep in your video. | 0  |
-| max-r     | The maximum red part you want to keep in your video. | 0  |
-| max-g     | The maximum green part you want to keep in your video. | 0 |
-| max-b     | The maximum blue part you want to keep in your video. | 0 |
-| height     | The height of your video. | 720 |
-| width     | The width of your video. | 960 |
+| Attribute        | Description           | Possible values  | Default value  |
+| ------------- |:-------------:| -----:|-----:|
+| preload     | 	Preload the video or stream it by applying | auto, metadata, none | none |
+| min-r     | The minimum red part you want to keep in your video.| 0, ..., 255 | 0 |
+| min-g     | The minimum green part you want to keep in your video.| 0, ..., 255 |  0 |
+| min-b    | The minimum blue part you want to keep in your video.| 0, ..., 255 | 0  |
+| max-r     | The maximum red part you want to keep in your video.| 0, ..., 255 | 0  |
+| max-g     | The maximum green part you want to keep in your video.| 0, ..., 255 | 0 |
+| max-b     | The maximum blue part you want to keep in your video.| 0, ..., 255 | 0 |
+| height     | The height of your video in px.| 0, ... | 720 |
+| width     | The width of your video in px.| 0, ... | 960 |
 
 # Error handling
 Sometimes it is hard to find the exact color range. Videos often don't render with the same RGB schema that the Browser uses. 
