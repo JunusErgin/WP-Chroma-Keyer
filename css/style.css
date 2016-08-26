@@ -1,5 +1,4 @@
 .chroma-video-button {
-    background-color: rgba(0, 0, 0, 0.3);
     margin-top: -3rem;
     margin-left: -3rem;
     font-size: 6rem;
@@ -13,6 +12,7 @@
 }
 
 .showPauseOnHover:hover .chroma-video-button img {
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     -webkit-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
