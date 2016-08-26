@@ -1,5 +1,8 @@
 var processorInstanciated = false;
 var processor = {
+    /**
+     * Trigger the video frame rendering whenever the video is playing.
+     */
     timerCallback: function () {
         if (this.video.paused || this.video.ended) {
             return;
@@ -9,6 +12,24 @@ var processor = {
         setTimeout(function () {
             self.timerCallback();
         }, 0);
+    },
+
+    /**
+     * Fetch the height and width of the video when it is available.
+     * Start the timer callback afterwards.
+     * */
+    startTimerCallback: function () {
+        let self = this;
+        setTimeout(function () {
+            self.width = self.video.videoWidth;
+            self.height = self.video.videoHeight;
+            if (+self.width === 0 || +self.height === 0) {
+                self.startTimerCallback();
+            }
+            else {
+                self.timerCallback();
+            }
+        }, 50);
     },
 
     doLoad: function (minR, minG, minB, maxR, maxG, maxB, instanceId) {
@@ -26,18 +47,14 @@ var processor = {
             this.c2 = document.getElementById("c2-" + instanceId);
             this.ctx2 = this.c2.getContext("2d");
             let self = this;
-            // if (!processorInstanciated) {
             console.log('Adding event listeners');
             this.video.addEventListener("play", function () {
-                self.width = self.video.videoWidth;
-                self.height = self.video.videoHeight;
-                self.timerCallback();
+                self.startTimerCallback();
             }, false);
 
             this.video.addEventListener("ended", function () {
                 chromaPauseVideo();
             });
-            //   }
             processorInstanciated = true;
         }
     },
@@ -69,8 +86,8 @@ var processor = {
 
 
 function chromaStartVideo(minR, minG, minB, maxR, maxG, maxB, instanceId) {
-    processor.doLoad(minR, minG, minB, maxR, maxG, maxB, instanceId);
     //  processor.timerCallback();
+    processor.doLoad(minR, minG, minB, maxR, maxG, maxB, instanceId);
     console.log('Starting video', instanceId);
     jQuery('#chroma-play-link-' + instanceId).hide();
     jQuery('#chroma-placeholder-' + instanceId).hide();

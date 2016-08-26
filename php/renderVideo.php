@@ -1,5 +1,5 @@
 <?php
-function render($src, $placeholder, $height, $width, $minR, $minG, $minB, $maxR, $maxG, $maxB, $videoId, $instanceId)
+function render($src, $placeholder, $height, $width, $minR, $minG, $minB, $maxR, $maxG, $maxB, $videoId, $instanceId, $preload)
 {
 
     echo '<script>
@@ -33,8 +33,10 @@ function render($src, $placeholder, $height, $width, $minR, $minG, $minB, $maxR,
         ';
 
     echo '  
-        <video id="' . $videoId . '" src="' . $src . '"
-               style="display:none;"></video >
+        <video id="' . $videoId . '" 
+               src="' . $src . '"
+               style="display:none;"
+               preload="' . $preload . '"></video >
         <canvas id = "c1-' . $instanceId . '" width = "' . $width . '" height = "' . $height . '" style = "display:none;" ></canvas >
         <canvas id = "c2-' . $instanceId . '" width = "' . $width . '" height = "' . $height . '" </canvas >
     </div >

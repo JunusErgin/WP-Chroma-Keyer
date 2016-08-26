@@ -4,7 +4,7 @@
 Plugin Name: Chroma Keyer
 Plugin URI: http://www.teleclinic.com
 Description: Insert a video and remove its background by spezifying an RBG code as a filter.
-Version: 1.0
+Version: 1.01
 Author: Junus Ergin
 */
 
@@ -26,7 +26,8 @@ function removeBackground($atts)
         'max-b' => '0',
         'min-b' => '0',
         'height' => '720',
-        'width' => '960'
+        'width' => '960',
+        'preload' => 'none'
     ), $atts);
 
 
@@ -44,7 +45,8 @@ function removeBackground($atts)
         $pull_quote_atts['max-g'],
         $pull_quote_atts['max-b'],
         $videoId,
-        $instanceId
+        $instanceId,
+        $pull_quote_atts['preload']
     );
     return ob_get_clean();
 }
