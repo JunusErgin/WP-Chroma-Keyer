@@ -25,6 +25,7 @@ The directive includes a video to your page and turns all colors between rgb(0,0
 
 | Attribute        | Description           | Default value  |
 | ------------- |:-------------:| -----:|
+| preload     | 	Preload the video or stream it by applying auto, metadata, none | none |
 | min-r     | The minimum red part you want to keep in your video. | 0 |
 | min-g     | The minimum green part you want to keep in your video. |  0 |
 | min-b    | The minimum blue part you want to keep in your video. | 0  |
