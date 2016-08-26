@@ -78,12 +78,6 @@ var processor = {
 
 };
 
-/*jQuery(document).ready(function ($) {
- if (typeof loadProcessor !== 'undefined') {
- loadProcessor();
- }
- });*/
-
 
 function chromaStartVideo(minR, minG, minB, maxR, maxG, maxB, instanceId) {
     //  processor.timerCallback();
