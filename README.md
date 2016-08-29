@@ -32,8 +32,8 @@ The directive includes a video to your page and turns all colors between rgb(0,0
 | max-r     | The maximum red part you want to keep in your video.| 0, ..., 255 | 0  |
 | max-g     | The maximum green part you want to keep in your video.| 0, ..., 255 | 0 |
 | max-b     | The maximum blue part you want to keep in your video.| 0, ..., 255 | 0 |
-| height     | The height of your video in px.| 0, ... | 720 |
-| width     | The width of your video in px.| 0, ... | 960 |
+| height     | The height of your video in px.| 1, ... | 720 |
+| width     | The width of your video in px.| 1, ... | 960 |
 
 # Error handling
 Sometimes it is hard to find the exact color range. Videos often don't render with the same RGB schema that the Browser uses. 
@@ -41,7 +41,7 @@ I recommend to render the videos with a black background (RGB-code 0,0,0) and en
 
 
 # Problems / Bugs
-Please create a an issue. I'll try to fix the problem with you.
+Please create an issue. I'll try to fix the problem with you.
 
 ## Contributors
 
