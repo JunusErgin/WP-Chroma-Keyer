@@ -46,3 +46,6 @@ Please create an issue. I'll try to fix the problem with you.
 ## Contributors
 
 - <a href="https://github.com/kelyane">Kelyane</a>
+
+## License
+MIT
