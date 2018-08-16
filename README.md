@@ -47,5 +47,5 @@ Please create an issue. I'll try to fix the problem with you.
 
 - <a href="https://github.com/kelyane">Kelyane</a>
 
-## License
+# License
 MIT
